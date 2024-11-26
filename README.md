@@ -28,7 +28,7 @@ Este site foi desenvolvido durante as aulas de **Linguagem de Programação II C
 - Cadastro e login de usuários
 - Apenas usuários cadastrados podem realizar operações de CRUD.
 - Consulta de CEP para obter informações como logradouro, bairro, cidade e estado, utilizando a Brasil API.
-- Uusários autenticados podem realizar log out.
+- Usuários autenticados podem realizar log out.
 
 <br>
 
