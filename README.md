@@ -17,15 +17,15 @@ Este site foi desenvolvido durante as aulas de **Linguagem de Programação II C
 - CSS: Para estilização e layout da página.
 - ASP.NET: Framework utilizado para o desenvolvimento da aplicação web.
 - C#: Linguagem de programação utilizada para a lógica da aplicação.
-- Brasil API: API pública utilizada para consultar informações sobre o CEP no Brasil.<br>
+- Brasil API: API pública utilizada para consultar informações sobre o CEP no Brasil.
 - FileZilla Portable: Hospedagem de sites.
 
 <br>
 
 ## 🔧 Funcionalidades
 
-- Páginas informativas
-- Cadastro e login de usuários
+- Páginas informativas.
+- Cadastro e login de usuários.
 - Apenas usuários cadastrados podem realizar operações de CRUD.
 - Consulta de CEP para obter informações como logradouro, bairro, cidade e estado, utilizando a Brasil API.
 - Usuários autenticados podem realizar log out.
