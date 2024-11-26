@@ -1,0 +1,98 @@
+﻿/* PROJETO WEB - ESTRUTURA DA MASTER PAGE */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141B1F;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #082135;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+}
+
+.flexslider {
+    background-color: #fff;
+    color: #fff;
+    position: relative;
+}
+
+    .flexslider .flex-direction-nav a,
+    .flexslider .flex-control-nav li a {
+        color: rgba(255, 255, 255, 0.8);
+        background-color: transparent;
+    }
+
+        .flexslider .flex-control-nav li a.flex-active {
+            background: #fff;
+        }
+
+.slides img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+.barra-fixa {
+    position: fixed;
+    width: 100%;
+    height: 81px;
+    background-color: #ffffffdb;
+    z-index: 100;
+}
+
+.conteudo {
+    min-height: 800px;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    font-size: 18px;
+}
+
+.copyright-text a,
+.footer-menu a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+    .footer-menu ul li {
+        list-style: none;
+        margin: 10px;
+    }
+
+hr {
+    border: none;
+    border-top: 1px solid #bbbbbb;
+}

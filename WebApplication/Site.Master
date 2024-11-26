@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/Projeto.css" rel="stylesheet" />
+    <link href="Css/StyleSheet.css" rel="stylesheet" />
+    <link href="Css/Docker.css" rel="stylesheet" />
+    <link href="Css/Subnautica.css" rel="stylesheet" />
+    <!-- BIBLIOTECAS PARA EXIBIR SLIDES -->
+    <link href="JavaScript/flexslider.css" rel="stylesheet" />
+    <script src="JavaScript/jquery-1.7.2.min.js"></script>
+    <script src="JavaScript/flexslider.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!--cabeçalho-->
+        <div class="cabecalho barra-fixa">
+            <div class="content-wrap">
+                <div class="barra">
+                    <div class="logomarca">
+                        <img width="75px" src="../Images/logo.png" />
+                    </div>
+                    <!-- menu -->
+                    <div class="barra-menu">
+                        <a href="../default.aspx">Home</a>
+                        <a href="../ADS.aspx">Docker</a>
+                        <a target="_blank" href="https://www.w3schools.com/">Tutorial</a>
+                        <a href="../Admin/CadastroUsuario.aspx">Cadastro</a>
+                        <a href="../ConsultaCEP.aspx">Consulta</a>
+                        <a href="../FaleConosco.aspx">Contato</a>
+                        <asp:LinkButton ID="Logout" Onclick="Logout_Click" runat="server">Sair</asp:LinkButton>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--conteudo-->
+        <div class="conteudo">
+            <asp:ContentPlaceHolder ID="Conteudo" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Rodapé -->
+        <footer class="content-wrap margin-top-60">
+            <div class="footer-content">
+                <div class="copyright-text">
+                    <p>
+                        Copyright &copy; 2024; Todos Direitos Reservados <a href="#">Jennifer</a> e <a href="#">Ana</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="default.aspx">Home</a></li>
+                        <li><a href="ADS.aspx">Docker</a></li>
+                        <li><a href="https://www.w3schools.com/">Tutorial</a></li>
+                        <li><a href="https://docs.docker.com">Saiba Mais</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
+

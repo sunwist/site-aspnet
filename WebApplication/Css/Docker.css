@@ -1,0 +1,114 @@
+/* Seção 'O que é Docker' */
+.texto-sobre {
+    position: relative;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+    .texto-sobre h1 {
+        margin-left: 10px;
+    }
+
+    .texto-sobre p {
+        margin-top: 30px;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.8;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+.col-4 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.texto-comofunciona {
+    position: relative;
+    padding: 0 15px;
+}
+
+    .texto-comofunciona p {
+        margin-top: 30px;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.8;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Seção 'Vantagens' */
+.titulo-vantagens {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: dodgerblue;
+    font-weight: 900;
+}
+
+.cards {
+    background-color: #082135;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; 
+    margin: 0 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex-wrap: wrap; 
+}
+
+    .cards:hover {
+        box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+        transform: scale(1.05); 
+    }
+
+.card {
+    margin: 10px;
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    height: auto; 
+    max-width: 100%; 
+}
+
+    .card .box {
+        padding: 18px;
+        flex-grow: 1; 
+    }
+
+    .card p {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.7;
+        overflow-wrap: break-word; 
+    }
+
+.icons, .icons-titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 10px 0; 
+    }
+
+    .texto-sobre h1, .texto-comofunciona h1 {
+        font-size: 26px;
+    }
+
+    .texto-sobre p, .texto-comofunciona p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+}

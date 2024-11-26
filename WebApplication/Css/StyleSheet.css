@@ -1,0 +1,348 @@
+﻿/***********************************************************
+  CSS com classes para serem utilizadas em outros projetos também.
+***********************************************************/
+
+* {
+    box-sizing: border-box !important;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #3d7dc6;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #4a35c6;
+    }
+
+.content-wrap, .content-wrap2 {
+    max-width: 1620px;
+    margin: auto;
+    position: relative;
+}
+
+hr {
+    height: 1px;
+    border-width: 0;
+    border-top: 1px solid;
+    border-top-color: #bbbbbb;
+    width: 100%;
+    display: inline-block;
+}
+
+.opcoes a{
+    padding-right: 35px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-11 {
+    width: 91.66666666%;
+}
+
+.col-10 {
+    width: 83.3333333%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-8 {
+    width: 66.66666667%;
+}
+
+.col-7 {
+    width: 58.33333333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-5 {
+    width: 41.66666667%;
+}
+
+.col-4 {
+    width: 33.33333333%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-2 {
+    width: 16.66666667%;
+}
+
+.col-1 {
+    width: 8.33333333%;
+}
+
+[class^="col-"] {
+    margin-bottom: 16px;
+}
+
+.box {
+    height: 100%;
+}
+
+.box-link .box:hover {
+    background-color: #eeeeee;
+}
+
+.box-link .box a {
+    color: #333333;
+}
+
+.box-shadow .box:hover {
+    box-shadow: 3px 3px 6px #c0c0c0;
+}
+
+.padding-14 {
+    padding: 14px;
+}
+
+.min-height-300px {
+    min-height: 300px;
+}
+
+.border {
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+}
+
+.padding-250 {
+    padding-top: 250px;
+}
+
+.padding-150{
+    padding-top: 150px;
+}
+
+.padding-100{
+    padding-top: 100px;
+}
+
+.border-right {
+    border-right: 1px solid #c0c0c0;
+}
+
+.margin-right-20 {
+    margin-right: 20px;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}
+
+.margin-top-120 {
+    margin-top: 120px;
+}
+
+.margin-bottom-120 {
+    margin-bottom: 120px;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.vertical-center {
+    display: flex;
+    display: -webkit-flex; 
+    align-items: center;
+}
+
+
+.formulario {
+    background-color: #082135;
+}
+
+label {
+    margin-top: 20px;
+    display: block;
+    max-width: 100%;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    resize: none;
+    outline: none;
+}
+
+select{
+    background: #3d7dc6;
+    color: #fff;
+}
+
+input[type="submit"],
+input[type="button"],
+button {
+    margin-top: 30px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    color: white;
+    background-color: #3d7dc6;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+    input[type="submit"]:hover,
+    input[type="button"]:hover,
+    button:hover {
+        background-color: #082135;
+        color: white;
+    }
+
+
+.botao-delete {
+    background-color: #ff6a00 !important;
+}
+
+    .botao-delete:hover {
+        background-color: #ff4500 !important;
+    }
+
+.botao-editar {
+    background-color: #498b47 !important;
+}
+
+    .botao-editar:hover {
+        background-color: #37a533 !important;
+    }
+
+.botao-inserir {
+    background-color: #355bc6 !important;
+}
+
+    .botao-inserir:hover {
+        background-color: #293b90 !important;
+    }
+
+@media only screen and (max-width: 768px) {
+
+    /* 
+        SELETORES DE ATRIBUTOS [] 
+        https://www.w3schools.com/css/css_attribute_selectors.asp 
+    */
+
+    .row{
+        flex-direction: column;
+    }
+
+    [class^="col-"] {
+        width: 100%;
+    }
+
+    [class=content-wrapper] {
+        padding: 0px;
+        margin: 6px;
+    }
+
+    [class*="box-border"] {
+        border: 0px;
+        padding: 0px;
+    }
+
+    [class*="box-padding-16"] {
+        border: 0px;
+        padding: 0px;
+    }
+
+    [class=dp-hr] {
+        display: inline-block;
+    }
+
+    [class*="margin-right-20"] {
+        margin-right: 0;
+    }
+
+    .form-input {
+        border: 0px;
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .form-view {
+        border: 0px;
+        padding: 0px;
+        padding-top: 1px;
+    }
+
+        .form-view .ht {
+            display: none;
+        }
+
+    .side-panel {
+        padding-left: 0 !important;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile-buttons {
+        display: inline-block;
+    }
+
+    .logotype {
+        float: right;
+    }
+
+    [class=logotype-img] {
+        max-width: 240px;
+    }
+
+
+}
+
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    #Printable * {
+        visibility: visible;
+    }
+}
