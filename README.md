@@ -47,7 +47,7 @@ Você pode acessar o site clicando aqui: [Acessar](http://anacarolinee.somee.com
 <table>
   <tr>
     <td align="center">
-      <a href="#" title="defina o título do link">
+      <a href="https://github.com/sunwist" title="defina o título do link">
         <img src="https://avatars.githubusercontent.com/u/104114717?v=4" width="100px;" alt="Jennifer Oliveira"/><br>
         <sub>
           <b>Jennifer Oliveira</b>
@@ -55,7 +55,7 @@ Você pode acessar o site clicando aqui: [Acessar](http://anacarolinee.somee.com
       </a>
     </td>
     <td align="center">
-      <a href="#" title="defina o título do link">
+      <a href="https://github.com/annakkarolyne" title="defina o título do link">
         <img src="https://avatars.githubusercontent.com/u/159071304?v=4" width="100px;" alt="Ana Caroline"/><br>
         <sub>
           <b>Ana Bugatto</b>
